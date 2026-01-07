@@ -98,19 +98,19 @@ To improve performance and reduce overfitting, the following preprocessing techn
 
 
 
-# 1. Cropping
+## 1. Cropping
 
 Removed irrelevant regions (sky and car hood) to focus only on the road.
 
 
 
-# 2. Normalization
+## 2. Normalization
 
 Scaled pixel values to the range \[-0.5, 0.5] to improve convergence.
 
 
 
-# 3. Data Augmentation
+## 3. Data Augmentation
 
 \- Horizontal flipping
 
@@ -130,7 +130,7 @@ These techniques help the model generalize better and handle real-world variatio
 
 
 
-# 🗂 Dataset
+## 🗂 Dataset
 
 
 
@@ -164,7 +164,7 @@ Due to size limitations, the full dataset is not uploaded to GitHub.
 
 
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
 
 
@@ -192,7 +192,7 @@ Due to size limitations, the full dataset is not uploaded to GitHub.
 
 
 
-\## 📁 Project Structure
+## 📁 Project Structure
 
 
 ## 📝 File Descriptions
@@ -329,6 +329,11 @@ Inference Time: ~30ms per frame
 - Deploy on embedded systems (NVIDIA Jetson, Raspberry Pi)
 
 - Integrate with ROS (Robot Operating System)
+- 
+## 🎥 Demo
+
+Autonomous driving performance video:  
+👉 [Click here to watch the demo](outputs/demo.mp4)
 
 ## 👨‍💻 Author
 ## Rohith R
