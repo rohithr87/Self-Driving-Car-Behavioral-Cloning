@@ -1,4 +1,4 @@
-\# Self-Driving Car – Behavioral Cloning using CNN (Udacity Simulator)
+# Self-Driving Car – Behavioral Cloning using CNN (Udacity Simulator)
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-\## 🚗 Project Overview
+# 🚗 Project Overview
 
 
 
@@ -36,7 +36,7 @@ The trained model is capable of:
 
 
 
-\## 🎯 Key Features
+# 🎯 Key Features
 
 
 
@@ -56,7 +56,7 @@ The trained model is capable of:
 
 
 
-\## 🧠 Model Architecture
+# 🧠 Model Architecture
 
 
 
@@ -90,7 +90,7 @@ This architecture is effective for learning spatial features and road patterns d
 
 
 
-\## 📊 Data Preprocessing \& Augmentation
+# 📊 Data Preprocessing \& Augmentation
 
 
 
@@ -98,19 +98,19 @@ To improve performance and reduce overfitting, the following preprocessing techn
 
 
 
-\### 1. Cropping
+# 1. Cropping
 
 Removed irrelevant regions (sky and car hood) to focus only on the road.
 
 
 
-\### 2. Normalization
+# 2. Normalization
 
 Scaled pixel values to the range \[-0.5, 0.5] to improve convergence.
 
 
 
-\### 3. Data Augmentation
+# 3. Data Augmentation
 
 \- Horizontal flipping
 
@@ -130,7 +130,7 @@ These techniques help the model generalize better and handle real-world variatio
 
 
 
-\## 🗂 Dataset
+# 🗂 Dataset
 
 
 
@@ -164,7 +164,7 @@ Due to size limitations, the full dataset is not uploaded to GitHub.
 
 
 
-\## 🛠 Tech Stack
+# 🛠 Tech Stack
 
 
 
