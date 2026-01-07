@@ -2,11 +2,11 @@
 
 
 
-This project implements a \*\*CNN-based behavioral cloning model\*\* to predict steering angles in real-time using images from the Udacity self-driving car simulator. The model learns driving behavior from human demonstration and enables smooth, stable autonomous lane navigation.
+- This project implements a \*\*CNN-based behavioral cloning model\*\* to predict steering angles in real-time using images from the Udacity self-driving car simulator. The model learns driving behavior from human demonstration and enables smooth, stable autonomous lane navigation.
 
 
 
-This is an end-to-end deep learning project covering \*\*data collection, preprocessing, model design, training, and deployment in a simulator environment.\*\*
+- This is an end-to-end deep learning project covering \*\*data collection, preprocessing, model design, training, and deployment in a simulator environment.\*\*
 
 
 
@@ -18,7 +18,7 @@ This is an end-to-end deep learning project covering \*\*data collection, prepro
 
 
 
-Behavioral cloning is a supervised learning approach where a model is trained to imitate human driving behavior. In this project, images from the center, left, and right cameras are used as input, and the corresponding steering angles are used as labels.
+- Behavioral cloning is a supervised learning approach where a model is trained to imitate human driving behavior. In this project, images from the center, left, and right cameras are used as input, and the corresponding steering angles are used as labels.
 
 
 
@@ -247,25 +247,25 @@ Note: TensorFlow 1.15 requires Python 3.7. If you have a different Python versio
 
 ▶️ How to Run the Project
 Step 1 – Train the Model
-If you want to train the model with your own data:
+- If you want to train the model with your own data:
 
-Collect data using the Udacity simulator in Training Mode
+- Collect data using the Udacity simulator in Training Mode
 
-Place your data in the data/ directory
+- Place your data in the data/ directory
 
 Run the training script:
 
 ```bash
 python src/train.py
 ```
-Alternatively, you can use the pre-trained model in the models/ directory.
+- Alternatively, you can use the pre-trained model in the models/ directory.
 
 Step 2 – Download and Run the Simulator
-Download the Udacity Self-Driving Car Simulator from the official repository
+- Download the Udacity Self-Driving Car Simulator from the official repository
 
-Choose the appropriate version for your OS
+- Choose the appropriate version for your OS
 
-Run the simulator and select Autonomous Mode
+- Run the simulator and select Autonomous Mode
 
 Step 3 – Start Driving Script
 ```bash
@@ -276,7 +276,7 @@ The car will now drive autonomously using the trained model.
 🎥 Demo
 A demo video of the autonomous driving performance is available in the outputs/ folder. You can also view it here.
 
-📈 Results
+## 📈 Results
 The trained model achieves:
 
 Smooth lane following on straight roads
@@ -297,8 +297,8 @@ Validation Loss: 0.015
 
 Inference Time: ~30ms per frame
 
-🚀 Future Improvements
-Advanced Architectures
+## 🚀 Future Improvements
+# Advanced Architectures
 
 - Implement DenseNet or EfficientNet-based models
 
