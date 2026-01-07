@@ -194,32 +194,26 @@ Due to size limitations, the full dataset is not uploaded to GitHub.
 
 \## 📁 Project Structure
 
-📁 Project Structure
-Self-Driving-Car-Behavioral-Cloning/
-│
-├── data/
-│   ├── IMG/
-│   └── driving_log.csv
-│
-├── notebooks/
-│   └── model.ipynb
-│
-├── src/
-│   ├── train.py
-│   ├── drive.py
-│   ├── model.py
-│   ├── utils.py
-│   └── preprocessing.py
-│
-├── models/
-│   └── model.h5
-│
-├── outputs/
-│   └── demo.mp4
-│
-├── requirements.txt
-├── LICENSE
-└── README.md
+
+## 📝 File Descriptions
+
+| File/Folder | Description |
+|------------|-------------|
+| `data/` | Contains collected driving data |
+| `data/IMG/` | Images from center, left, and right cameras |
+| `data/driving_log.csv` | CSV file with image paths and steering angles |
+| `notebooks/model.ipynb` | Jupyter notebook for model development |
+| `src/train.py` | Script to train the behavioral cloning model |
+| `src/drive.py` | Script to connect model with simulator |
+| `src/model.py` | CNN model architecture definition |
+| `src/utils.py` | Helper functions for data processing |
+| `src/preprocessing.py` | Image preprocessing and augmentation |
+| `models/model.h5` | Pre-trained model weights |
+| `outputs/demo.mp4` | Video demonstration of autonomous driving |
+| `requirements.txt` | Python dependencies |
+| `LICENSE` | MIT License file |
+| `README.md` | This documentation file |
+
 
 ## ⚙️ Installation & Setup
 1. Clone the Repository
