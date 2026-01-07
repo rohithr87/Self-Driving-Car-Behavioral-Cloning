@@ -1,12 +1,12 @@
-\# Self-Driving Car – Behavioral Cloning using CNN (Udacity Simulator)
+# Self-Driving Car – Behavioral Cloning using CNN (Udacity Simulator)
 
 
 
-This project implements a \*\*CNN-based behavioral cloning model\*\* to predict steering angles in real-time using images from the Udacity self-driving car simulator. The model learns driving behavior from human demonstration and enables smooth, stable autonomous lane navigation.
+- This project implements a \*\*CNN-based behavioral cloning model\*\* to predict steering angles in real-time using images from the Udacity self-driving car simulator. The model learns driving behavior from human demonstration and enables smooth, stable autonomous lane navigation.
 
 
 
-This is an end-to-end deep learning project covering \*\*data collection, preprocessing, model design, training, and deployment in a simulator environment.\*\*
+- This is an end-to-end deep learning project covering \*\*data collection, preprocessing, model design, training, and deployment in a simulator environment.\*\*
 
 
 
@@ -14,11 +14,11 @@ This is an end-to-end deep learning project covering \*\*data collection, prepro
 
 
 
-\## 🚗 Project Overview
+# 🚗 Project Overview
 
 
 
-Behavioral cloning is a supervised learning approach where a model is trained to imitate human driving behavior. In this project, images from the center, left, and right cameras are used as input, and the corresponding steering angles are used as labels.
+- Behavioral cloning is a supervised learning approach where a model is trained to imitate human driving behavior. In this project, images from the center, left, and right cameras are used as input, and the corresponding steering angles are used as labels.
 
 
 
@@ -36,7 +36,7 @@ The trained model is capable of:
 
 
 
-\## 🎯 Key Features
+# 🎯 Key Features
 
 
 
@@ -56,7 +56,7 @@ The trained model is capable of:
 
 
 
-\## 🧠 Model Architecture
+# 🧠 Model Architecture
 
 
 
@@ -90,7 +90,7 @@ This architecture is effective for learning spatial features and road patterns d
 
 
 
-\## 📊 Data Preprocessing \& Augmentation
+# 📊 Data Preprocessing \& Augmentation
 
 
 
@@ -98,19 +98,19 @@ To improve performance and reduce overfitting, the following preprocessing techn
 
 
 
-\### 1. Cropping
+# 1. Cropping
 
 Removed irrelevant regions (sky and car hood) to focus only on the road.
 
 
 
-\### 2. Normalization
+# 2. Normalization
 
 Scaled pixel values to the range \[-0.5, 0.5] to improve convergence.
 
 
 
-\### 3. Data Augmentation
+# 3. Data Augmentation
 
 \- Horizontal flipping
 
@@ -130,7 +130,7 @@ These techniques help the model generalize better and handle real-world variatio
 
 
 
-\## 🗂 Dataset
+# 🗂 Dataset
 
 
 
@@ -164,7 +164,7 @@ Due to size limitations, the full dataset is not uploaded to GitHub.
 
 
 
-\## 🛠 Tech Stack
+# 🛠 Tech Stack
 
 
 
@@ -195,6 +195,177 @@ Due to size limitations, the full dataset is not uploaded to GitHub.
 \## 📁 Project Structure
 
 
+## 📝 File Descriptions
+
+| File/Folder | Description |
+|------------|-------------|
+| `data/` | Contains collected driving data |
+| `data/IMG/` | Images from center, left, and right cameras |
+| `data/driving_log.csv` | CSV file with image paths and steering angles |
+| `notebooks/model.ipynb` | Jupyter notebook for model development |
+| `src/train.py` | Script to train the behavioral cloning model |
+| `src/drive.py` | Script to connect model with simulator |
+| `src/model.py` | CNN model architecture definition |
+| `src/utils.py` | Helper functions for data processing |
+| `src/preprocessing.py` | Image preprocessing and augmentation |
+| `models/model.h5` | Pre-trained model weights |
+| `outputs/demo.mp4` | Video demonstration of autonomous driving |
+| `requirements.txt` | Python dependencies |
+| `LICENSE` | MIT License file |
+| `README.md` | This documentation file |
+
+
+## ⚙️ Installation & Setup
+1. Clone the Repository
+```bash
+git clone https://github.com/rohitR87/Self-Driving-Car-Behavioral-Cloning.git
+cd Self-Driving-Car-Behavioral-Cloning
+```
+2. Create Virtual Environment (Optional but Recommended)
+```bash
+# For Windows
+python -m venv venv
+venv\Scripts\activate
+```
+
+# For Linux/Mac
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+Note: TensorFlow 1.15 requires Python 3.7. If you have a different Python version, consider using a virtual environment with Python 3.7.
+
+▶️ How to Run the Project
+Step 1 – Train the Model
+- If you want to train the model with your own data:
+
+- Collect data using the Udacity simulator in Training Mode
+
+- Place your data in the data/ directory
+
+Run the training script:
+
+```bash
+python src/train.py
+```
+- Alternatively, you can use the pre-trained model in the models/ directory.
+
+Step 2 – Download and Run the Simulator
+- Download the Udacity Self-Driving Car Simulator from the official repository
+
+- Choose the appropriate version for your OS
+
+- Run the simulator and select Autonomous Mode
+
+Step 3 – Start Driving Script
+```bash
+python src/drive.py models/model.h5
+```
+The car will now drive autonomously using the trained model.
+
+🎥 Demo
+A demo video of the autonomous driving performance is available in the outputs/ folder. You can also view it here.
+
+## 📈 Results
+The trained model achieves:
+
+Smooth lane following on straight roads
+
+Stable steering on curves without oscillation
+
+No zig-zag behavior
+
+Good generalization on unseen track sections
+
+Real-time inference at 30+ FPS
+
+Training Metrics:
+
+Training Loss: 0.012
+
+Validation Loss: 0.015
+
+Inference Time: ~30ms per frame
+
+## 🚀 Future Improvements
+# Advanced Architectures
+
+- Implement DenseNet or EfficientNet-based models
+
+- Add attention mechanisms for better focus on road features
+
+- Data Enhancement
+
+- Collect data from more challenging scenarios (sharp turns, intersections)
+
+- Add weather and lighting variations
+
+- Include recovery maneuvers
+
+- Model Improvements
+
+- Implement ensemble learning with multiple models
+
+- Add temporal information using LSTM/GRU layers
+
+- Incorporate speed as an additional input
+
+- Simulation Environment
+
+- Migrate to advanced simulators like CARLA or MetaDrive
+
+- Add traffic sign and obstacle detection
+
+- Implement multi-agent scenarios
+
+- Real-world Applications
+
+- Transfer learning to real-world driving datasets
+
+- Deploy on embedded systems (NVIDIA Jetson, Raspberry Pi)
+
+- Integrate with ROS (Robot Operating System)
+
+## 👨‍💻 Author
+## Rohith R
+
+- Final Year Computer Science & Engineering Student
+
+- Specialization: AI / Machine Learning / Computer Vision
+
+- GitHub: rohitR87
+
+- LinkedIn: Rohith R
+
+## 📌 Note
+This project is built purely for educational and research purposes using the Udacity simulator. No real-world driving deployment is involved. The model is trained on simulated data and may not perform well in real-world conditions without further training and safety considerations.
+
+##🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Fork the repository
+
+- Create your feature branch (git checkout -b feature/AmazingFeature)
+
+- Commit your changes (git commit -m 'Add some AmazingFeature')
+
+- Push to the branch (git push origin feature/AmazingFeature)
+
+- Open a Pull Request
+
+# 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+# 🙏 Acknowledgments
+- Udacity for providing the Self-Driving Car Simulator
+
+- NVIDIA for the inspiration from their end-to-end driving model
+
+- The open-source community for various tools and libraries
 
 
 
