@@ -195,43 +195,54 @@ Due to size limitations, the full dataset is not uploaded to GitHub.
 \## 📁 Project Structure
 
 📁 Project Structure
-text
 Self-Driving-Car-Behavioral-Cloning/
-├── data/                          # Dataset info / samples
-│   ├── IMG/                       # Sample images
-│   └── driving_log.csv            # Sample driving log
-├── notebooks/                     # Jupyter notebooks
-│   └── model.ipynb                # Complete model development notebook
-├── src/                           # Source code
-│   ├── train.py                   # Training script
-│   ├── drive.py                   # Driving script for simulator
-│   ├── model.py                   # Model architecture definition
-│   ├── utils.py                   # Utility functions
-│   └── preprocessing.py           # Data preprocessing functions
-├── models/                        # Trained models
-│   └── model.h5                   # Trained model weights
-├── outputs/                       # Demo videos
-│   └── demo.mp4                   # Autonomous driving demo
-├── requirements.txt               # Dependencies list
-├── LICENSE                        # MIT License
-└── README.md                      # Project documentation
-⚙️ Installation & Setup
+│
+├── data/
+│   ├── IMG/
+│   └── driving_log.csv
+│
+├── notebooks/
+│   └── model.ipynb
+│
+├── src/
+│   ├── train.py
+│   ├── drive.py
+│   ├── model.py
+│   ├── utils.py
+│   └── preprocessing.py
+│
+├── models/
+│   └── model.h5
+│
+├── outputs/
+│   └── demo.mp4
+│
+├── requirements.txt
+├── LICENSE
+└── README.md
+
+## ⚙️ Installation & Setup
 1. Clone the Repository
-bash
+```bash
 git clone https://github.com/rohitR87/Self-Driving-Car-Behavioral-Cloning.git
 cd Self-Driving-Car-Behavioral-Cloning
+```
 2. Create Virtual Environment (Optional but Recommended)
-bash
+```bash
 # For Windows
 python -m venv venv
 venv\Scripts\activate
+```
 
 # For Linux/Mac
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 3. Install Dependencies
-bash
+```bash
 pip install -r requirements.txt
+```
 Note: TensorFlow 1.15 requires Python 3.7. If you have a different Python version, consider using a virtual environment with Python 3.7.
 
 ▶️ How to Run the Project
@@ -244,8 +255,9 @@ Place your data in the data/ directory
 
 Run the training script:
 
-bash
+```bash
 python src/train.py
+```
 Alternatively, you can use the pre-trained model in the models/ directory.
 
 Step 2 – Download and Run the Simulator
@@ -256,8 +268,9 @@ Choose the appropriate version for your OS
 Run the simulator and select Autonomous Mode
 
 Step 3 – Start Driving Script
-bash
+```bash
 python src/drive.py models/model.h5
+```
 The car will now drive autonomously using the trained model.
 
 🎥 Demo
@@ -287,78 +300,78 @@ Inference Time: ~30ms per frame
 🚀 Future Improvements
 Advanced Architectures
 
-Implement DenseNet or EfficientNet-based models
+- Implement DenseNet or EfficientNet-based models
 
-Add attention mechanisms for better focus on road features
+- Add attention mechanisms for better focus on road features
 
-Data Enhancement
+- Data Enhancement
 
-Collect data from more challenging scenarios (sharp turns, intersections)
+- Collect data from more challenging scenarios (sharp turns, intersections)
 
-Add weather and lighting variations
+- Add weather and lighting variations
 
-Include recovery maneuvers
+- Include recovery maneuvers
 
-Model Improvements
+- Model Improvements
 
-Implement ensemble learning with multiple models
+- Implement ensemble learning with multiple models
 
-Add temporal information using LSTM/GRU layers
+- Add temporal information using LSTM/GRU layers
 
-Incorporate speed as an additional input
+- Incorporate speed as an additional input
 
-Simulation Environment
+- Simulation Environment
 
-Migrate to advanced simulators like CARLA or MetaDrive
+- Migrate to advanced simulators like CARLA or MetaDrive
 
-Add traffic sign and obstacle detection
+- Add traffic sign and obstacle detection
 
-Implement multi-agent scenarios
+- Implement multi-agent scenarios
 
-Real-world Applications
+- Real-world Applications
 
-Transfer learning to real-world driving datasets
+- Transfer learning to real-world driving datasets
 
-Deploy on embedded systems (NVIDIA Jetson, Raspberry Pi)
+- Deploy on embedded systems (NVIDIA Jetson, Raspberry Pi)
 
-Integrate with ROS (Robot Operating System)
+- Integrate with ROS (Robot Operating System)
 
-👨‍💻 Author
-Rohith R
+## 👨‍💻 Author
+## Rohith R
 
-Final Year Computer Science & Engineering Student
+- Final Year Computer Science & Engineering Student
 
-Specialization: AI / Machine Learning / Computer Vision
+- Specialization: AI / Machine Learning / Computer Vision
 
-GitHub: rohitR87
+- GitHub: rohitR87
 
-LinkedIn: Rohith R
+- LinkedIn: Rohith R
 
-📌 Note
+## 📌 Note
 This project is built purely for educational and research purposes using the Udacity simulator. No real-world driving deployment is involved. The model is trained on simulated data and may not perform well in real-world conditions without further training and safety considerations.
 
-🤝 Contributing
+##🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-Fork the repository
+## Fork the repository
 
-Create your feature branch (git checkout -b feature/AmazingFeature)
+- Create your feature branch (git checkout -b feature/AmazingFeature)
 
-Commit your changes (git commit -m 'Add some AmazingFeature')
+- Commit your changes (git commit -m 'Add some AmazingFeature')
 
-Push to the branch (git push origin feature/AmazingFeature)
+- Push to the branch (git push origin feature/AmazingFeature)
 
-Open a Pull Request
+- Open a Pull Request
 
-📄 License
+# 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
-Udacity for providing the Self-Driving Car Simulator
+# 🙏 Acknowledgments
+- Udacity for providing the Self-Driving Car Simulator
 
-NVIDIA for the inspiration from their end-to-end driving model
+- NVIDIA for the inspiration from their end-to-end driving model
 
-The open-source community for various tools and libraries
+- The open-source community for various tools and libraries
 
 
 
